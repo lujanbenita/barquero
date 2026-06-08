@@ -177,7 +177,7 @@ img { display: block; max-width: 100%; }
 @media (max-width: 880px){
   .hero-grid { grid-template-columns: 1fr; }
   .hero-media { margin-top: 24px; }
-  .hero-media .ph, .hero-media .photo { aspect-ratio: 16 / 11; }
+  .hero-media .ph, .hero-media .photo { aspect-ratio: 16 / 11; object-position: top center; }
 }
 
 /* stat strip */

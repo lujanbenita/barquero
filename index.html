@@ -1,336 +1,493 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Tecnificación personal Barquero</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Anton&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
-</head>
-<body data-dir="editorial">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnificación personal Barquero</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-dir="editorial">
+    <!-- ============ NAV ============ -->
+    <nav class="nav" id="nav">
+      <a class="brand" href="#top">
+        <b>Barquero</b>
+        <span>Tecnificación personal</span>
+      </a>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas</a>
+        <a href="#metodo">Método</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#resultados">Resultados</a>
+        <a class="nav-cta" href="#reserva">Reservar sesión</a>
+      </div>
+    </nav>
 
-  <!-- ============ NAV ============ -->
-  <nav class="nav" id="nav">
-    <a class="brand" href="#top">
-      <b>Barquero</b>
-      <span>Tecnificación personal</span>
-    </a>
-    <div class="nav-links">
-      <a href="#sobre">Sobre</a>
-      <a href="#areas">Áreas</a>
-      <a href="#metodo">Método</a>
-      <a href="#trayectoria">Trayectoria</a>
-      <a href="#resultados">Resultados</a>
-      <a class="nav-cta" href="#reserva">Reservar sesión</a>
-    </div>
-  </nav>
+    <span id="top"></span>
 
-  <span id="top"></span>
-
-  <!-- ============ HERO ============ -->
-  <header class="hero" data-screen-label="Hero">
-    <div class="wrap">
-      <div class="hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Tecnificación personal · Valencia</p>
-          <h1 class="display">Cada jugador esconde un <span class="gold">futbolista mejor.</span></h1>
-          <p class="lead">Entrenamiento individual de la mano de un entrenador, analista y psicólogo deportivo con más de 20 años detectando el detalle que marca la diferencia — del portero al delantero.</p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#reserva">Reservar una sesión <span class="arr">→</span></a>
-            <a class="btn btn-ghost" href="#metodo">Conocer el método</a>
+    <!-- ============ HERO ============ -->
+    <header class="hero" data-screen-label="Hero">
+      <div class="wrap">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Tecnificación personal · Valencia</p>
+            <h1 class="display">
+              Cada jugador esconde un
+              <span class="gold">futbolista mejor.</span>
+            </h1>
+            <p class="lead">
+              Entrenamiento individual de la mano de un entrenador, analista y
+              psicólogo deportivo con más de 20 años detectando el detalle que
+              marca la diferencia — del portero al delantero.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#reserva"
+                >Reservar una sesión <span class="arr">→</span></a
+              >
+              <a class="btn btn-ghost" href="#metodo">Conocer el método</a>
+            </div>
+          </div>
+          <div class="hero-media">
+            <img
+              class="photo"
+              src="assets/barquero-hero.jpg"
+              alt="Barquero observando un partido desde la banda"
+            />
           </div>
         </div>
-        <div class="hero-media">
-          <img class="photo" src="assets/barquero-hero.jpg" alt="Barquero observando un partido desde la banda" />
-          <div class="hero-tag">Valencia · Entrenamiento personalizado</div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="n"><span class="gold">20</span>+</div>
+            <div class="l">años como entrenador y analista de fútbol</div>
+          </div>
+          <div class="stat">
+            <div class="n">1 a 1</div>
+            <div class="l">tecnificación individual y a medida</div>
+          </div>
+          <div class="stat">
+            <div class="n">GK→9</div>
+            <div class="l">trabaja todas las posiciones del campo</div>
+          </div>
+          <div class="stat">
+            <div class="n">Canteras</div>
+            <div class="l">jugadores que han fichado por clubes formadores</div>
+          </div>
         </div>
       </div>
+    </header>
 
-      <div class="stats">
-        <div class="stat">
-          <div class="n"><span class="gold">20</span>+</div>
-          <div class="l">años como entrenador y analista de fútbol</div>
-        </div>
-        <div class="stat">
-          <div class="n">1 a 1</div>
-          <div class="l">tecnificación individual y a medida</div>
-        </div>
-        <div class="stat">
-          <div class="n">GK→9</div>
-          <div class="l">trabaja todas las posiciones del campo</div>
-        </div>
-        <div class="stat">
-          <div class="n">Canteras</div>
-          <div class="l">jugadores que han fichado por clubes formadores</div>
+    <!-- ============ SOBRE ============ -->
+    <section class="section" id="sobre" data-screen-label="Sobre Barquero">
+      <div class="wrap">
+        <div class="about-grid">
+          <div class="about-media reveal">
+            <img
+              class="photo"
+              src="assets/barquero-about.jpg"
+              alt="Barquero con un grupo de jugadores tras un partido"
+            />
+          </div>
+          <div class="about-body reveal">
+            <p class="eyebrow">01 — Quién está detrás</p>
+            <p>
+              Más de <strong>dos décadas</strong> dentro del fútbol como
+              entrenador y analista. Barquero ha trabajado todas las áreas del
+              juego, y por eso
+              <strong
+                >reconoce con facilidad qué tiene que mejorar cada
+                jugador</strong
+              >
+              — desde la colocación del portero hasta la definición del
+              delantero.
+            </p>
+            <p>
+              No es solo técnica. Es también
+              <strong>psicólogo deportivo y consejero</strong>, especialmente
+              con los más pequeños: acompaña la cabeza tanto como los pies,
+              porque el talento se sostiene sobre la confianza.
+            </p>
+            <p>
+              Su método nace de mirar al jugador como individuo, encontrar el
+              detalle que lo frena y convertirlo en su ventaja.
+            </p>
+            <div class="about-sign">
+              <div>
+                <div class="nm">Barquero</div>
+                <div class="rl">
+                  Entrenador · Analista · Psicólogo deportivo
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </section>
 
-  <!-- ============ SOBRE ============ -->
-  <section class="section" id="sobre" data-screen-label="Sobre Barquero">
-    <div class="wrap">
-      <div class="about-grid">
-        <div class="about-media reveal">
-          <img class="photo" src="assets/barquero-about.jpg" alt="Barquero con un grupo de jugadores tras un partido" />
+    <!-- ============ ÁREAS ============ -->
+    <section class="section" id="areas" data-screen-label="Áreas de trabajo">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">02 — Áreas de trabajo</p>
+            <h2 class="display">De la portería al delantero</h2>
+          </div>
+          <p class="lead">
+            Cada posición pide un trabajo distinto. La sesión se diseña según
+            dónde juega y qué necesita el jugador.
+          </p>
         </div>
-        <div class="about-body reveal">
-          <p class="eyebrow">01 — Quién está detrás</p>
-          <p>Más de <strong>dos décadas</strong> dentro del fútbol como entrenador y analista. Barquero ha trabajado todas las áreas del juego, y por eso <strong>reconoce con facilidad qué tiene que mejorar cada jugador</strong> — desde la colocación del portero hasta la definición del delantero.</p>
-          <p>No es solo técnica. Es también <strong>psicólogo deportivo y consejero</strong>, especialmente con los más pequeños: acompaña la cabeza tanto como los pies, porque el talento se sostiene sobre la confianza.</p>
-          <p>Su método nace de mirar al jugador como individuo, encontrar el detalle que lo frena y convertirlo en su ventaja.</p>
-          <div class="about-sign">
+        <div class="areas reveal">
+          <div class="area">
+            <div class="idx">01</div>
+            <h3>Portería</h3>
+            <p>
+              Colocación, juego de pies, blocaje, salida de balón y lectura del
+              uno contra uno.
+            </p>
+            <div class="pos">Portero</div>
+          </div>
+          <div class="area">
+            <div class="idx">02</div>
+            <h3>Defensa</h3>
+            <p>
+              Posicionamiento, anticipación, duelo, marca y salida limpia desde
+              atrás.
+            </p>
+            <div class="pos">Central · Lateral</div>
+          </div>
+          <div class="area">
+            <div class="idx">03</div>
+            <h3>Medio</h3>
+            <p>
+              Recepción orientada, visión de juego, último pase y trabajo entre
+              líneas.
+            </p>
+            <div class="pos">Pivote · Interior</div>
+          </div>
+          <div class="area">
+            <div class="idx">04</div>
+            <h3>Ataque</h3>
+            <p>
+              Desmarque, definición, regate, conducción y toma de decisión en
+              área.
+            </p>
+            <div class="pos">Extremo · Delantero</div>
+          </div>
+          <div class="area">
+            <div class="idx">05</div>
+            <h3>Mentalidad</h3>
+            <p>
+              Confianza, gestión de la presión, foco y hábitos. Psicología
+              deportiva aplicada.
+            </p>
+            <div class="pos">Todas las edades</div>
+          </div>
+          <div class="area">
+            <div class="idx">06</div>
+            <h3>Análisis</h3>
+            <p>
+              Diagnóstico individual del jugador y plan claro de qué pulir, cómo
+              y cuándo.
+            </p>
+            <div class="pos">Punto de partida</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MÉTODO ============ -->
+    <section class="section method" id="metodo" data-screen-label="Método">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div>
+            <p class="eyebrow">03 — El método</p>
+            <h2 class="display">Cómo trabaja Barquero</h2>
+          </div>
+          <p class="lead">
+            Un proceso individual, sin grupos. Primero entender al jugador;
+            después, transformarlo.
+          </p>
+        </div>
+        <div class="steps reveal">
+          <div class="step">
+            <div class="sn">01</div>
             <div>
-              <div class="nm">Barquero</div>
-              <div class="rl">Entrenador · Analista · Psicólogo deportivo</div>
+              <h4>Observación</h4>
+              <p>
+                Ve jugar y entrenar al jugador para leer su nivel real, no el
+                que dice el papel.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="sn">02</div>
+            <div>
+              <h4>Diagnóstico</h4>
+              <p>
+                Identifica con precisión las áreas a mejorar — técnicas,
+                tácticas y mentales.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="sn">03</div>
+            <div>
+              <h4>Plan a medida</h4>
+              <p>
+                Diseña la tecnificación según su posición, edad y objetivos
+                concretos.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="sn">04</div>
+            <div>
+              <h4>Sesiones 1 a 1</h4>
+              <p>
+                Trabajo individual e intenso sobre el detalle, con corrección en
+                tiempo real.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="sn">05</div>
+            <div>
+              <h4>Acompañamiento</h4>
+              <p>
+                Apoyo psicológico al jugador y comunicación constante con la
+                familia.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="sn">06</div>
+            <div>
+              <h4>Proyección</h4>
+              <p>
+                Preparar al jugador para dar el salto y llamar la atención de
+                las canteras.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ ÁREAS ============ -->
-  <section class="section" id="areas" data-screen-label="Áreas de trabajo">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">02 — Áreas de trabajo</p>
-          <h2 class="display">De la portería al delantero</h2>
-        </div>
-        <p class="lead">Cada posición pide un trabajo distinto. La sesión se diseña según dónde juega y qué necesita el jugador.</p>
-      </div>
-      <div class="areas reveal">
-        <div class="area">
-          <div class="idx">01</div>
-          <h3>Portería</h3>
-          <p>Colocación, juego de pies, blocaje, salida de balón y lectura del uno contra uno.</p>
-          <div class="pos">Portero</div>
-        </div>
-        <div class="area">
-          <div class="idx">02</div>
-          <h3>Defensa</h3>
-          <p>Posicionamiento, anticipación, duelo, marca y salida limpia desde atrás.</p>
-          <div class="pos">Central · Lateral</div>
-        </div>
-        <div class="area">
-          <div class="idx">03</div>
-          <h3>Medio</h3>
-          <p>Recepción orientada, visión de juego, último pase y trabajo entre líneas.</p>
-          <div class="pos">Pivote · Interior</div>
-        </div>
-        <div class="area">
-          <div class="idx">04</div>
-          <h3>Ataque</h3>
-          <p>Desmarque, definición, regate, conducción y toma de decisión en área.</p>
-          <div class="pos">Extremo · Delantero</div>
-        </div>
-        <div class="area">
-          <div class="idx">05</div>
-          <h3>Mentalidad</h3>
-          <p>Confianza, gestión de la presión, foco y hábitos. Psicología deportiva aplicada.</p>
-          <div class="pos">Todas las edades</div>
-        </div>
-        <div class="area">
-          <div class="idx">06</div>
-          <h3>Análisis</h3>
-          <p>Diagnóstico individual del jugador y plan claro de qué pulir, cómo y cuándo.</p>
-          <div class="pos">Punto de partida</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ MÉTODO ============ -->
-  <section class="section method" id="metodo" data-screen-label="Método">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">03 — El método</p>
-          <h2 class="display">Cómo trabaja Barquero</h2>
-        </div>
-        <p class="lead">Un proceso individual, sin grupos. Primero entender al jugador; después, transformarlo.</p>
-      </div>
-      <div class="steps reveal">
-        <div class="step">
-          <div class="sn">01</div>
+    <!-- ============ TRAYECTORIA ============ -->
+    <section class="section" id="trayectoria" data-screen-label="Trayectoria">
+      <div class="wrap">
+        <div class="section-head reveal">
           <div>
-            <h4>Observación</h4>
-            <p>Ve jugar y entrenar al jugador para leer su nivel real, no el que dice el papel.</p>
+            <p class="eyebrow">04 — Trayectoria</p>
+            <h2 class="display">Clubes por los que ha pasado</h2>
+          </div>
+          <p class="lead">
+            Ha cogido a grandes jugadores de equipos tan diversos como estos, en
+            distintas categorías.
+          </p>
+        </div>
+        <div class="clubs-row reveal">
+          <span class="club">Levante UD</span>
+          <span class="club">Valencia CF</span>
+          <span class="club">San José</span>
+          <span class="club">Torre Levante</span>
+          <span class="club">Patacona</span>
+        </div>
+        <p class="tray-note reveal">
+          Una mirada formada en realidades muy distintas: del club grande al de
+          barrio. Eso le permite entender a cada jugador venga de donde venga, y
+          darle exactamente lo que necesita.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ RESULTADOS ============ -->
+    <section
+      class="section results"
+      id="resultados"
+      data-screen-label="Resultados"
+    >
+      <div class="wrap">
+        <div class="results-grid">
+          <div class="reveal">
+            <p class="eyebrow">05 — Resultados</p>
+            <div class="bignum">
+              →<small>Jugadores que han fichado por canteras</small>
+            </div>
+          </div>
+          <div class="reveal">
+            <p class="quote">
+              Su trabajo ha llevado a jugadores a
+              <span class="gold">fichar por las canteras</span> de clubes
+              formadores. Ese es el objetivo: que el salto se note dentro y
+              fuera del campo.
+            </p>
+            <p class="quote-by">— Tecnificación personal Barquero</p>
           </div>
         </div>
-        <div class="step">
-          <div class="sn">02</div>
-          <div>
-            <h4>Diagnóstico</h4>
-            <p>Identifica con precisión las áreas a mejorar — técnicas, tácticas y mentales.</p>
+      </div>
+    </section>
+
+    <!-- ============ RESERVA ============ -->
+    <section class="section" id="reserva" data-screen-label="Reserva">
+      <div class="wrap">
+        <div class="reserve-grid">
+          <div class="reserve-left reveal">
+            <p class="eyebrow">06 — Reserva</p>
+            <h2 class="display">Empieza por una sesión</h2>
+            <p class="lead">
+              Cuéntale a Barquero sobre el jugador. Recibirás respuesta para
+              concretar una primera sesión y un primer diagnóstico.
+            </p>
+            <ul class="reserve-points">
+              <li>Atención individual, adaptada a su posición y edad.</li>
+              <li>Diagnóstico claro de qué mejorar desde el primer día.</li>
+              <li>Acompañamiento técnico y mental, también para la familia.</li>
+            </ul>
+          </div>
+          <div class="reserve-right reveal">
+            <form class="form" id="reserveForm" novalidate>
+              <div class="field">
+                <label for="f-tutor">Padre / madre / tutor</label>
+                <input
+                  id="f-tutor"
+                  name="tutor"
+                  type="text"
+                  placeholder="Tu nombre"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-player">Nombre del jugador</label>
+                <input
+                  id="f-player"
+                  name="player"
+                  type="text"
+                  placeholder="Nombre del jugador"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-age">Edad del jugador</label>
+                <input
+                  id="f-age"
+                  name="age"
+                  type="number"
+                  min="4"
+                  max="40"
+                  placeholder="Ej. 11"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-pos">Posición</label>
+                <select id="f-pos" name="position" required>
+                  <option value="" selected disabled>Selecciona…</option>
+                  <option>Portero</option>
+                  <option>Defensa</option>
+                  <option>Centrocampista</option>
+                  <option>Extremo</option>
+                  <option>Delantero</option>
+                  <option>Aún por definir</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="f-email">Email</label>
+                <input
+                  id="f-email"
+                  name="email"
+                  type="email"
+                  placeholder="tucorreo@email.com"
+                  required
+                />
+              </div>
+              <div class="field">
+                <label for="f-phone">Teléfono</label>
+                <input
+                  id="f-phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="+34 600 000 000"
+                  required
+                />
+              </div>
+              <div class="field full">
+                <label for="f-msg">¿Qué quieres mejorar?</label>
+                <textarea
+                  id="f-msg"
+                  name="message"
+                  placeholder="Cuéntanos brevemente sobre el jugador y sus objetivos…"
+                ></textarea>
+              </div>
+              <div class="form-actions">
+                <p class="form-note">
+                  Al enviar aceptas que Barquero se ponga en contacto contigo
+                  para concretar la sesión.
+                </p>
+                <button class="btn btn-solid" type="submit">
+                  Enviar solicitud <span class="arr">→</span>
+                </button>
+              </div>
+              <div class="form-done">
+                <h3>¡Recibido!</h3>
+                <p>
+                  Gracias. Barquero se pondrá en contacto contigo muy pronto
+                  para concretar la primera sesión.
+                </p>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="step">
-          <div class="sn">03</div>
-          <div>
-            <h4>Plan a medida</h4>
-            <p>Diseña la tecnificación según su posición, edad y objetivos concretos.</p>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <a class="brand" href="#top">
+            <b>Barquero</b>
+            <span>Tecnificación personal</span>
+          </a>
+          <div class="footer-contact">
+            <a href="#reserva">Reservar una sesión →</a>
+            <span>Valencia, España</span>
+            <a href="mailto:hola@barquero.es">hola@barquero.es</a>
           </div>
         </div>
-        <div class="step">
-          <div class="sn">04</div>
-          <div>
-            <h4>Sesiones 1 a 1</h4>
-            <p>Trabajo individual e intenso sobre el detalle, con corrección en tiempo real.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="sn">05</div>
-          <div>
-            <h4>Acompañamiento</h4>
-            <p>Apoyo psicológico al jugador y comunicación constante con la familia.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="sn">06</div>
-          <div>
-            <h4>Proyección</h4>
-            <p>Preparar al jugador para dar el salto y llamar la atención de las canteras.</p>
-          </div>
+        <div class="footer-bottom">
+          <span>© 2026 Tecnificación personal Barquero</span>
+          <span>Del portero al delantero · Valencia</span>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ============ TRAYECTORIA ============ -->
-  <section class="section" id="trayectoria" data-screen-label="Trayectoria">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <div>
-          <p class="eyebrow">04 — Trayectoria</p>
-          <h2 class="display">Clubes por los que ha pasado</h2>
-        </div>
-        <p class="lead">Ha cogido a grandes jugadores de equipos tan diversos como estos, en distintas categorías.</p>
-      </div>
-      <div class="clubs-row reveal">
-        <span class="club">Levante UD</span>
-        <span class="club">Valencia CF</span>
-        <span class="club">San José</span>
-        <span class="club">Torre Levante</span>
-        <span class="club">Patacona</span>
-      </div>
-      <p class="tray-note reveal">Una mirada formada en realidades muy distintas: del club grande al de barrio. Eso le permite entender a cada jugador venga de donde venga, y darle exactamente lo que necesita.</p>
-    </div>
-  </section>
+    <!-- Tweaks mount -->
+    <div id="tweaks-root"></div>
 
-  <!-- ============ RESULTADOS ============ -->
-  <section class="section results" id="resultados" data-screen-label="Resultados">
-    <div class="wrap">
-      <div class="results-grid">
-        <div class="reveal">
-          <p class="eyebrow">05 — Resultados</p>
-          <div class="bignum">→<small>Jugadores que han fichado por canteras</small></div>
-        </div>
-        <div class="reveal">
-          <p class="quote">Su trabajo ha llevado a jugadores a <span class="gold">fichar por las canteras</span> de clubes formadores. Ese es el objetivo: que el salto se note dentro y fuera del campo.</p>
-          <p class="quote-by">— Tecnificación personal Barquero</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ RESERVA ============ -->
-  <section class="section" id="reserva" data-screen-label="Reserva">
-    <div class="wrap">
-      <div class="reserve-grid">
-        <div class="reserve-left reveal">
-          <p class="eyebrow">06 — Reserva</p>
-          <h2 class="display">Empieza por una sesión</h2>
-          <p class="lead">Cuéntale a Barquero sobre el jugador. Recibirás respuesta para concretar una primera sesión y un primer diagnóstico.</p>
-          <ul class="reserve-points">
-            <li>Atención individual, adaptada a su posición y edad.</li>
-            <li>Diagnóstico claro de qué mejorar desde el primer día.</li>
-            <li>Acompañamiento técnico y mental, también para la familia.</li>
-          </ul>
-        </div>
-        <div class="reserve-right reveal">
-          <form class="form" id="reserveForm" novalidate>
-            <div class="field">
-              <label for="f-tutor">Padre / madre / tutor</label>
-              <input id="f-tutor" name="tutor" type="text" placeholder="Tu nombre" required />
-            </div>
-            <div class="field">
-              <label for="f-player">Nombre del jugador</label>
-              <input id="f-player" name="player" type="text" placeholder="Nombre del jugador" required />
-            </div>
-            <div class="field">
-              <label for="f-age">Edad del jugador</label>
-              <input id="f-age" name="age" type="number" min="4" max="40" placeholder="Ej. 11" required />
-            </div>
-            <div class="field">
-              <label for="f-pos">Posición</label>
-              <select id="f-pos" name="position" required>
-                <option value="" selected disabled>Selecciona…</option>
-                <option>Portero</option>
-                <option>Defensa</option>
-                <option>Centrocampista</option>
-                <option>Extremo</option>
-                <option>Delantero</option>
-                <option>Aún por definir</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="f-email">Email</label>
-              <input id="f-email" name="email" type="email" placeholder="tucorreo@email.com" required />
-            </div>
-            <div class="field">
-              <label for="f-phone">Teléfono</label>
-              <input id="f-phone" name="phone" type="tel" placeholder="+34 600 000 000" required />
-            </div>
-            <div class="field full">
-              <label for="f-msg">¿Qué quieres mejorar?</label>
-              <textarea id="f-msg" name="message" placeholder="Cuéntanos brevemente sobre el jugador y sus objetivos…"></textarea>
-            </div>
-            <div class="form-actions">
-              <p class="form-note">Al enviar aceptas que Barquero se ponga en contacto contigo para concretar la sesión.</p>
-              <button class="btn btn-solid" type="submit">Enviar solicitud <span class="arr">→</span></button>
-            </div>
-            <div class="form-done">
-              <h3>¡Recibido!</h3>
-              <p>Gracias. Barquero se pondrá en contacto contigo muy pronto para concretar la primera sesión.</p>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="footer">
-    <div class="wrap">
-      <div class="footer-top">
-        <a class="brand" href="#top">
-          <b>Barquero</b>
-          <span>Tecnificación personal</span>
-        </a>
-        <div class="footer-contact">
-          <a href="#reserva">Reservar una sesión →</a>
-          <span>Valencia, España</span>
-          <a href="mailto:hola@barquero.es">hola@barquero.es</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Tecnificación personal Barquero</span>
-        <span>Del portero al delantero · Valencia</span>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Tweaks mount -->
-  <div id="tweaks-root"></div>
-
-  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
-  <script type="text/babel" src="tweaks-panel.jsx"></script>
-  <script type="text/babel" src="app.jsx"></script>
-</body>
+    <script
+      src="https://unpkg.com/react@18.3.1/umd/react.development.js"
+      integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js"
+      integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js"
+      integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/babel" src="tweaks-panel.jsx"></script>
+    <script type="text/babel" src="app.jsx"></script>
+  </body>
 </html>
