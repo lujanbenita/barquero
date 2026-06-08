@@ -34,6 +34,7 @@
     e.preventDefault();
     if (!form.checkValidity()) { form.reportValidity(); return; }
     form.classList.add('sent');
+    form.scrollIntoView ? null : null;
   });
 })();
 
@@ -53,6 +54,8 @@ function App() {
 
   React.useEffect(() => {
     document.documentElement.style.setProperty('--accent', t.acento);
+    // ink color contrast: white accent needs dark ink, dark accents need light? all chosen are light enough
+    const dark = ['#f2efe8', '#ffffff'];
     document.documentElement.style.setProperty('--accent-ink', '#0a0a0a');
   }, [t.acento]);
 
